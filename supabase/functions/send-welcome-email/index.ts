@@ -59,25 +59,10 @@ serve(async (req) => {
     
     // Send welcome email
     const { data, error } = await resend.emails.send({
-      from: "Študko <onboarding@resend.dev>", // Zamenjaj z svojim domenom
+      from: "Študko <onboarding@resend.dev>",
       to: [email],
-      subject: "🚀 Tvoje VIP mesto v Študku je rezervirano!",
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h1 style="color: #8B5CF6;">Živijo!</h1>
-          <p style="font-size: 16px; line-height: 1.6;">
-            Hvala za prijavo na Študko waiting listo. Rezerviral si si mesto med prvih 50!
-          </p>
-          <p style="font-size: 16px; line-height: 1.6;">
-            <b>Se vidimo ob otvoritvi: v nedeljo, 18. 1. ob 15:00.</b>
-          </p>
-          <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;">
-          <p style="font-size: 14px; color: #6b7280;">
-            Lep pozdrav,<br>
-            Ekipa Študko
-          </p>
-        </div>
-      `,
+      subject: "Dobrodošel v Študko! 🚀",
+      html: "<h1>Živijo!</h1><p>Hvala za prijavo. Se vidimo v nedeljo ob 15:00!</p>",
     });
 
     if (error) {
