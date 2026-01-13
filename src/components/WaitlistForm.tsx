@@ -153,10 +153,10 @@ const WaitlistForm = () => {
               <Check className="w-10 h-10 text-primary-foreground" />
             </motion.div>
             <h3 className="text-2xl font-bold font-display text-foreground mb-2">
-              Uspešno! Preveri svoj email.
+              Uspešno ste se prijavili!
             </h3>
             <p className="text-muted-foreground">
-              Tvoje mesto je rezervirano. Poslali smo ti potrditev na email!
+              Tvoje mesto je rezervirano. Ob otvoritvi boste dobili potrditveni email!
             </p>
           </motion.div>
         )}
